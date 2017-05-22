@@ -6,6 +6,9 @@
  */
 
 module.exports = {
-	
+	getList: (req, res) => {
+		res.ok({
+			cenas: 1
+		})
+	}
 };
-
