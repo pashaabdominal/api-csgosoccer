@@ -18,7 +18,6 @@
  * For more information on configuration, check out:
  * http://sailsjs.org/#!/documentation/reference/sails.config/sails.config.connections.html
  */
-
 module.exports.connections = {
   mysql: {
     adapter: 'sails-mysql',

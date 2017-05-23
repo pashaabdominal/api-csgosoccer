@@ -6,11 +6,9 @@
  */
 module.exports = {
 		current: (req, res) => {
-			Jackpot.findOne({
-				current: true
-			})
+			Jackpot.getCurrent()
 			.then((JackpotEntity) => {
-				res.ok(JackpotEntity)
+				res.ok(JackpotEntity);
 			});
 		}
 };
