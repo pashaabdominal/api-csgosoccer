@@ -4,8 +4,7 @@
  * @description :: Server-side logic for managing users
  * @help        :: See http://sailsjs.org/#!/documentation/concepts/Controllers
  */
-
-module.exports = {ss
+module.exports = {
 		getList: (req, res) => {
 			res.ok([
 				{

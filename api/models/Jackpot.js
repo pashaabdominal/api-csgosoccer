@@ -1,5 +1,5 @@
 /**
- * Jackpot.js
+ * Jackpot Model
  *
  * @description :: TODO: This module define attributes like current pot, hash of the pot, totalParticipants in the pot and the totalPot(money in the pot)
  * @docs        :: http://sailsjs.org/documentation/concepts/models-and-orm/models
@@ -8,41 +8,58 @@
 module.exports = {
   attributes: {
     /**
-   * @name current
-   * @type boolean
-   * @description Says if the pot is running or not!
-   */
+     * @name current
+     * @type boolean
+     * @description Determine if the pot is the current running pot
+     */
     current: {
       type: 'boolean',
       defaultsTo: false
     },
     /**
-   * @name hash
-   * @type string
-   * @description The hash is a md5 encryption of the round secret and winning percentage. Example: c61f0fab614061124d85d0bdb0d15640
-   */
+     * @name hash
+     * @type string
+     * @description The hash is a md5 encryption of the round secret and winning percentage.
+     */
     hash: {
-      type: 'string'
+      type: 'string',
+      unique: true,
       size: '32'
-      unique: true
     },
     /**
-   * @name totalParticipants
-   * @type integer
-   * @description Number of total players on the pot!
-   */
+     * @name totalParticipants
+     * @type integer
+     * @description Number of total participants on the pot
+     */
     totalParticipants: {
       type: 'integer',
       defaultsTo: 0
     },
     /**
-   * @name totalPot
-   * @type float
-   * @description Total value on the pot!
-   */
+     * @name totalSkins
+     * @type integer
+     * @description Total skins deposited in current game
+     */
+    totalSkins: {
+      type: 'integer',
+      defaultsTo: 0
+    },
+    /**
+     * @name totalPot
+     * @type float
+     * @description Total value in skins on the pot
+     */
     totalPot: {
-      type: 'float'
+      type: 'float',
       defaultsTo: 0
     }
+  },
+  /**
+   * @name totalPot
+   *
+   * @return Promise
+   */
+  getCurrent: () => {
+    return this.findOneByCurrent(true);
   }
 };

@@ -8,15 +8,7 @@
  * For more info on Sails models, see:
  * http://sailsjs.org/#!/documentation/concepts/ORM
  */
-
 module.exports.models = {
-
-
-
-  connections: 'memory'
-
-
-},
 
   /***************************************************************************
   *                                                                          *
@@ -24,7 +16,7 @@ module.exports.models = {
   * connections (see `config/connections.js`)                                *
   *                                                                          *
   ***************************************************************************/
-   connection: 'csgosoccer',
+  connection: 'mysql',
 
   /***************************************************************************
   *                                                                          *
@@ -34,7 +26,5 @@ module.exports.models = {
   * See http://sailsjs.org/#!/documentation/concepts/ORM/model-settings.html  *
   *                                                                          *
   ***************************************************************************/
-  // migrate: 'alter'
-
-
+  migrate: 'alter'
 };
