@@ -37,6 +37,7 @@ module.exports.routes = {
   },
 
   'GET /users': 'UserController.getList',
+  'GET /jackpot': 'JackpotController.current'
 
 
 

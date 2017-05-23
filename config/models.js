@@ -11,13 +11,20 @@
 
 module.exports.models = {
 
+
+
+  connections: 'memory'
+
+
+},
+
   /***************************************************************************
   *                                                                          *
   * Your app's default connection. i.e. the name of one of your app's        *
   * connections (see `config/connections.js`)                                *
   *                                                                          *
   ***************************************************************************/
-  // connection: 'localDiskDb',
+   connection: 'csgosoccer',
 
   /***************************************************************************
   *                                                                          *
@@ -28,5 +35,6 @@ module.exports.models = {
   *                                                                          *
   ***************************************************************************/
   // migrate: 'alter'
+
 
 };
