@@ -1,9 +1,10 @@
 /**
  * Jackpot Model
  *
- * @description :: TODO: This module define attributes like current pot, hash of the pot, totalParticipants in the pot and the totalPot(money in the pot)
- * @docs        :: http://sailsjs.org/documentation/concepts/models-and-orm/models
+ * @description This module define attributes like current pot, hash of the pot, totalParticipants in the pot and the totalPot(money in the pot)
+ * @docs http://sailsjs.org/documentation/concepts/models-and-orm/models
  * @author Afonso Martins <afonsopoker@gmail.com>
+ * @author Lucas Silva <joao.galiano.silva@gmail.com>
  */
 module.exports = {
   attributes: {
@@ -56,10 +57,11 @@ module.exports = {
   },
   /**
    * @name totalPot
-   *
+   * @description Get current running jackpot
    * @return Promise
    */
   getCurrent: () => {
+    console.log(this);
     return this.findOneByCurrent(true);
   }
 };

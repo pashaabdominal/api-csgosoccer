@@ -36,11 +36,6 @@ module.exports.routes = {
     view: 'homepage'
   },
 
-  'GET /users': 'UserController.getList',
-  'GET /jackpot': 'JackpotController.current'
-
-
-
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *
@@ -51,4 +46,6 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
+  'GET /users': 'UserController.getList',
+  'GET /jackpot': 'JackpotController.current'
 };
