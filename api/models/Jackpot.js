@@ -62,6 +62,7 @@ module.exports = {
    */
   getCurrent: () => {
     console.log(this);
+    console.log(this.prototype);
     return this.findOneByCurrent(true);
   }
 };
