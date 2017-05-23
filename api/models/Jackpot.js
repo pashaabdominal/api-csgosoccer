@@ -14,7 +14,7 @@ module.exports = {
       type: 'string'
       size: '32'
       unique: true
-    }
+    },
     totalParticipants: {
       type: 'integer',
       defaultsTo: 0
@@ -22,6 +22,6 @@ module.exports = {
     totalPot: {
       type: 'float'
       defaultsTo: 0
-    },
+    }
   }
 };
