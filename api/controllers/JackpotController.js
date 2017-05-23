@@ -6,7 +6,7 @@
  */
 module.exports = {
 		current: (req, res) => {
-			Jackpot.getCurrent()
+			Jackpot.findOneByCurrent(true)
 			.then((JackpotEntity) => {
 				res.ok(JackpotEntity);
 			});
