@@ -8,7 +8,6 @@
  */
 module.exports = {
   attributes: {
-    public $timestamps = false
     /**
      * @name current
      * @type boolean
