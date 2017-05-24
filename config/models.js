@@ -19,14 +19,6 @@ module.exports.models = {
 
   connection: 'mysql',
 
-  public function setUpdatedAtAttribute($value)
-  {
-      // to Disable updated_at
-  }
-  public function setCreatedAtAttribute($value)
-  {
-      // to Disable created_at
-  }
   /***************************************************************************
   *                                                                          *
   * How and whether Sails will attempt to automatically rebuild the          *
