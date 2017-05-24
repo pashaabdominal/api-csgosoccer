@@ -18,9 +18,9 @@ module.exports.models = {
   ***************************************************************************/
 
   connection: 'mysql',
-  
-  autoCreatedAt: false
-  autoUpdatedAt: false
+
+  createdAt: false
+  updatedAt: false
 
   /***************************************************************************
   *                                                                          *
