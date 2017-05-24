@@ -8,6 +8,17 @@
 module.exports = {
 
   attributes: {
+    /**
+    DISABLE CREATED_AT AND UPDATED_AT
+    **/
 
+    autoCreatedAt: false,
+    autoUpdatedAt: false,
+
+    /**
+    ///////////////////////////////////////////////////
+    **/
+
+    
   }
 };
