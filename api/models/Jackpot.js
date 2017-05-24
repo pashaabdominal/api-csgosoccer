@@ -8,6 +8,7 @@
  */
 module.exports = {
   attributes: {
+    public $timestamps = false
     /**
      * @name current
      * @type boolean
@@ -65,13 +66,5 @@ module.exports = {
     console.log(this.prototype);
     return this.findOneByCurrent(true);
   }
-  
-  public function setUpdatedAtAttribute($value)
-  {
-      // to Disable updated_at
-  }
-  public function setCreatedAtAttribute($value)
-  {
-      // to Disable created_at
-  }
+
 };
