@@ -12,7 +12,7 @@ module.exports = {
     DISABLE CREATED_AT AND UPDATED_AT
     **/
 
-    autoCreatedAt: false,
+    autoCreatedAt: false
     autoUpdatedAt: false,
 
     /**
