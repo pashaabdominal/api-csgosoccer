@@ -7,17 +7,17 @@
  * @author Lucas Silva <joao.galiano.silva@gmail.com>
  */
 module.exports = {
-
   /**
-  DISABLE CREATED_AT AND UPDATED_AT
-  **/
-
+   * @docs http://sailsjs.com/documentation/concepts/models-and-orm/model-settings#?autocreatedat
+   */
   autoCreatedAt: false,
-  autoUpdatedAt: false,
-
   /**
-  ///////////////////////////////////////////////////
-  **/
+   * @docs http://sailsjs.com/documentation/concepts/models-and-orm/model-settings#?autoupdatedat
+   */
+  autoUpdatedAt: false,
+  /**
+   * @description A object containing all mysql columns for table "jackpot"
+   */
   attributes: {
     /**
      * @name current
@@ -66,12 +66,4 @@ module.exports = {
       defaultsTo: 0
     }
   }
-
-
-
-
-
-
-
-
 };
