@@ -20,13 +20,15 @@
     "grunt-sync": "0.2.4",
     "include-all": "~0.1.6",
     "rc": "1.0.1",
+    "request": "^2.81.0",
     "sails": "~0.12.1",
     "sails-disk": "~0.10.9",
     "sails-mysql": "^0.11.5"
   },
   "scripts": {
     "debug": "node debug app.js",
-    "start": "node app.js"
+    "start": "node app.js",
+    "test": "node ./node_modules/mocha/bin/mocha test/bootstrap.test.js test/unit/**/*.test.js"
   },
   "main": "app.js",
   "repository": {

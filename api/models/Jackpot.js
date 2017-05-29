@@ -54,15 +54,5 @@ module.exports = {
       type: 'float',
       defaultsTo: 0
     }
-  },
-  /**
-   * @name totalPot
-   * @description Get current running jackpot
-   * @return Promise
-   */
-  getCurrent: () => {
-    console.log(this);
-    console.log(this.prototype);
-    return this.findOneByCurrent(true);
   }
 };
