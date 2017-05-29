@@ -17,7 +17,7 @@ module.exports = {
 				},
 				{
 					id: 3,
-					username: 'Antonio'
+					username: 'Crazy'
 				}
 			]);
 		}

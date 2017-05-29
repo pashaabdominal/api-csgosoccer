@@ -7,6 +7,17 @@
  * @author Lucas Silva <joao.galiano.silva@gmail.com>
  */
 module.exports = {
+
+  /**
+  DISABLE CREATED_AT AND UPDATED_AT
+  **/
+
+  autoCreatedAt: false,
+  autoUpdatedAt: false,
+
+  /**
+  ///////////////////////////////////////////////////
+  **/
   attributes: {
     /**
      * @name current
@@ -55,4 +66,12 @@ module.exports = {
       defaultsTo: 0
     }
   }
+
+
+
+
+
+
+
+
 };
